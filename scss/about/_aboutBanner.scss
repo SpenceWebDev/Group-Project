@@ -1,12 +1,31 @@
-body {
-    margin: 0;
-
-}
 .about-banner {
     width: 100%;
+    position: relative;
+    
         img {
-            max-width: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 150px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            margin-left: 45px;
+            color: #fff;
         }
 }
+
+.about-container {
+    margin-left: 90px;
+    margin-right: 90px;
+
+        h2 {
+            font-size: 55px;
+        }
+}
+
+
 
 
