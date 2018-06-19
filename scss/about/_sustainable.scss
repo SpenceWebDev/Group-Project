@@ -1,0 +1,15 @@
+.quote {
+    display: flex;
+
+    img {
+        width: 815px;
+        height: 815px;
+        object-fit: cover;
+    }
+
+    p {
+        font-size: 50px;
+        margin: auto;
+    }
+
+}
