@@ -1,0 +1,38 @@
+@charset 'utf-8';
+@import 'banner';
+
+
+@media screen and (max-width:930px){
+
+    .companyname{
+        font-size: 35px;
+        position: relative;
+    }
+    
+    .nav{
+        width: 360px;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .nav a{
+        font-size: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:680px){
+
+    .companyname{
+        font-size: 20px;
+    }
+    
+    .nav{
+        width: 300px;
+        margin-top: 15px;
+    }
+    
+    .nav a{
+        font-size: 15px;
+    }
+}
