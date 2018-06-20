@@ -1,0 +1,23 @@
+.eco-info {
+    display: flex;
+    padding: 140px;
+    width: 100%;
+
+    img {
+        width: 256px;
+        height: 256px;
+        display: block;
+        margin: auto;
+        margin-bottom: 55px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .eco-item {
+        padding: 50px;
+        width: 100%;
+    }
+
+}
