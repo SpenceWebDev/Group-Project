@@ -1,31 +1,56 @@
 @charset 'utf-8';
 
-@font-face {
-    font-family: 'porter';
-    src: url('./../../fonts/Porter.ttf');
-}
-
+/* Company Name Style Start */
 .companyname{
     color: black;
-    font-family: 'porter';
-    font-size: 55px;
+    font-family: $nav-header-font;
+    font-size: 3vw;
     float: left;
-    margin-top: 25px;
-    margin-left: 5%;
-    background-color: #fff;
-    position: relative;
+    margin-left: 2%;
+    transition: ease-in-out 0.4s all;
+    line-height: 120px;
+}
+/* Company Name Style End */
+
+/*Navigation Bar Styles Start*/
+.nav-bar{
+    width: 100%;
+    height: 120px;
+    font-family: $main-font;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
 }
 
+.nav-bar ul li{
+    list-style-type: none;
+    float: right;
+    line-height: 120px;
+    margin-right: 2%;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: ease-in-out 0.4s all;
+}
+
+.nav-bar ul li a:hover{
+    color: $brand-color;
+    letter-spacing: 3px;
+}
+/*Navigation Bar Styles End*/
+
+/*
 .nav{
   overflow: hidden;
   background-color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: $nav-header-font;
   width: 500px;
   margin-top: 25px;
   margin-right: 10%;
   float: right;
-  z-index: 9999;
-  position: relative;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav a{
@@ -36,6 +61,7 @@
   text-decoration: none;
   font-size: 30px;
   letter-spacing: 2px;
+  list-style: none;
 }
 
 .nav a:hover{
@@ -46,3 +72,5 @@
 .nav a:active{
     color: #5893A8;
 }
+
+*/

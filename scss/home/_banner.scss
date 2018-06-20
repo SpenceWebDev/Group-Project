@@ -4,29 +4,35 @@
     left: 65%;
     transform: translate(-50%, -50%);
 }
-.container{
+.banner{
     position: relative;
     text-align: center;
 }
 
-.container a{
+.banner a{
     color: white;
     background-color: black;
     padding: 15px;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: $main-heading-font;
     text-decoration: none;
+    list-style: none;
+    font-size: 1.5vw;
+    transition: ease-in-out 0.4s all;
 }
 
-.container a:hover{
+.banner a:hover{
     color: black;
     background-color: white;
     border: 2px solid black;
 }
 
-.container h1{
-    font-family: 'Raleway', sans-serif;
+.banner h1{
+    font-family: $main-heading-font;
     font-size: 100px;
-    color: black;
-    text-transform: uppercase;
+    color: white;
+    text-transform: capitalize;
+    font-size: 6vw;
+    margin-bottom: -5px;
+    transition: ease-in-out 0.4s all;
 }

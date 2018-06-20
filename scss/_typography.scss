@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'porter';
+    src: url('./../../fonts/Porter.ttf');
+}
+
 p {
     font-family: $main-font;
     line-height: 1.6;
@@ -7,3 +12,6 @@ p {
 h1, h2 {
     font-family: $main-heading-font;
 }
+
+
+
