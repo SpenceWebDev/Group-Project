@@ -1,5 +1,6 @@
 .quote-sect {
     display: flex;
+    margin-bottom: 100px;
 
     img {
         width: 815px;
@@ -10,6 +11,8 @@
     p {
         font-size: 50px;
         margin: auto;
+        margin-right: 50px;
+        font-family: $main-heading-font;
     }
 
 }
