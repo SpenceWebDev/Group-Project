@@ -1,6 +1,7 @@
 .eco-info {
     display: flex;
     padding: 140px;
+    padding-bottom: 0;
     width: 100%;
 
     img {
@@ -12,11 +13,11 @@
     }
 
     p {
-        text-align: justify;
+        text-align: center;
     }
 
     .eco-item {
-        padding: 50px;
+        padding: 45px;
         width: 100%;
     }
 
