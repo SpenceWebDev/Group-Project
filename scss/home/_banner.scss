@@ -1,40 +1,32 @@
-.banner-one{
-    width: 100vw;
-    object-fit: cover;
-}
-
-#banner-background{
-    width: 100vw;
-    object-fit: cover;
-}
-
-.summer{
-    padding: 5px;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 85px;
+.centered {
     position: absolute;
-    color: black;
-    margin-left: 50%;
-    margin-top: 15%;
-    z-index: 9999;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    position: relative;
+    text-align: center;
 }
 
-.collection{
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    position: absolute;
-    margin-left: 1045px;
-    margin-top: 21%;
+.container a{
     color: white;
-    background: black;
-    z-index: 9999;
+    background-color: black;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
 }
 
-.collection:hover{
+.container a:hover{
     color: black;
-    background: white;
+    background-color: white;
     border: 2px solid black;
+}
+
+.container h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    color: black;
+    text-transform: uppercase;
 }
