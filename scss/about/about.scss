@@ -7,16 +7,5 @@
 @import 'blueBox';
 @import 'ecoSect';
 @import 'sweatshopFree';
-
-.about-margin {
-    margin-left: 140px;
-    margin-right: 140px;
-
-    h2 {
-        font-size: 100px;
-        color: $brand-color;    
-        margin-top: 100px;
-        margin-bottom: 35px;
-    }
-}
+@import 'aboutMargin';
 
