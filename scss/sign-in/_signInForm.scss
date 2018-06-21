@@ -9,9 +9,40 @@
         font-family: $main-font;
     }
 
+    label:not([for="remember"]){
+        display: block;
+    }
+
     p {
         text-align: center;
+        text-decoration: underline;
     }
+
+    .sign-up {
+        font-weight: bold;
+    }
+
+    a {
+        color: #000;
+    }
+
+    input:not([type="submit"]):not([type="checkbox"]) {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin: auto;
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        padding: 10px 50px;
+    }
+
+
+
 
 
 
