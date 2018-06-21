@@ -1,36 +1,40 @@
 @charset 'utf-8';
 
+/*Milk-Box Text Styles Start*/
 .milk-studios{
     font-size: 40px;
-    
+    padding: 20px;
 }
 
 .milk-studios-desc{
     text-align: left;
-    
+    padding: 20px;
 }
 
 .milk-box{
-    width: 650px;
-    height: 450px;
-    background-color: rgba(255, 255, 255, 0.705);
-    border: 3px solid red;
+    width: 550px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.877);
     position: absolute;
     margin-left: 1050px;
-    margin-top: 65px;
+    margin-top: 120px;
     z-index: 9999;
 }
+/*Milk-Box Text Styles End*/
 
+/*Content Images Styles Start*/
 #woman-red-top{
-    margin-left: 65px;
-    margin-top: 65px;
-    object-fit: cover;
-    position: absolute;
+   
 }
 
 #vancouver-background{
-    float: right;
-    margin-left: 880px;
-    margin-top: 65px;
-    position: absolute;
+   
 }
+
+#clothing-rack{
+   
+}
+/*Content Images Styles End*/
+
+
+
