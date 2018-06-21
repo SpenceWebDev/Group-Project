@@ -1,16 +1,21 @@
 .collection-items {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 536px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 678px);
     grid-gap: 20px;
     grid-row-gap: 150px;
-    padding: 140px;
+    padding: 100px;
     padding-top: 200px;
 
     img {
         height: 100%;
         object-fit: cover;
+    }
+
+    .item-02 img,
+    .item-05 img {
+        object-position: right top;
     }
 
     p {
