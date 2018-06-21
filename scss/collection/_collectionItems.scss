@@ -4,12 +4,16 @@
     grid-template-columns: repeat(3, 536px);
     grid-template-rows: repeat(2, 678px);
     grid-gap: 20px;
-    row-gap: 150px;
+    grid-row-gap: 150px;
     padding: 140px;
     padding-top: 200px;
 
     img {
         height: 100%;
         object-fit: cover;
+    }
+
+    p {
+        text-transform: capitalize;
     }
 }
