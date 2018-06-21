@@ -1,0 +1,32 @@
+@import 'variables';
+
+.collection-banner {
+    width: 100%;
+    height: 915px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    .collection-banner-txt{
+
+        margin-left: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        h1 {
+            font-size: 90px;
+            color: $brand-color;
+        }
+
+        h2 {
+            font-size: 50px;
+            line-height: 1.3;
+        }
+    }
+
+    img {
+        width: 55%;
+        object-fit: cover;
+    }
+}
