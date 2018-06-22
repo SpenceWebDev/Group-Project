@@ -22,19 +22,34 @@
 }
 /*Milk-Box Text Styles End*/
 
-/*Content Images Styles Start*/
-#woman-red-top{
-   
+/*Content-Container Styles Start*/
+.content-container{
+    display: flex;
 }
 
-#vancouver-background{
-   
+.content-container div{
+border: 1px #ccc solid;
+padding: 10px;
 }
 
-#clothing-rack{
-   
+.box-1{
+    flex: 2;
+    
 }
-/*Content Images Styles End*/
+
+.box-2{
+    flex: 1;
+}
+
+.box-3{
+    flex: 1;
+}
+
+.box-4{
+    flex: 1;
+}
+
+/*Content-Container Styles End*/
 
 
 
