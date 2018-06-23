@@ -6,7 +6,6 @@
 
     img {
         width: 256px;
-        height: 256px;
         display: block;
         margin: auto;
         margin-bottom: 55px;
@@ -20,5 +19,15 @@
         padding: 45px;
         width: 100%;
     }
+
+    @media screen and (max-width: 1500px){
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:800px) {
+        padding: 45px;
+    }
+
+   
 
 }

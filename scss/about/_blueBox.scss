@@ -4,8 +4,12 @@
     padding: 75px 125px;
     
     p {
-        font-size: 30px;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
+    }
+
+    @media screen and (max-width:1000px) {
+        padding: 45px;
     }
 }

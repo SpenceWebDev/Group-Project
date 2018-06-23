@@ -15,4 +15,21 @@
         font-family: $main-heading-font;
     }
 
+    @media screen and (max-width: 1500px){
+        flex-direction: column-reverse;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            padding: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+    }
 }
