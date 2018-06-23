@@ -27,6 +27,13 @@
             line-height: 250%;
         }
     }
+
+    @media screen and (max-width: 400px){
+
+        h1 {
+            font-size: 11vw;
+        }
+    }
 }
 
 

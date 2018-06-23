@@ -24,10 +24,18 @@
         flex-direction: column;
     }
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:1000px) {
         padding: 45px;
     }
 
-   
+    @media screen and (max-width:550px){
+
+        padding: 0;
+
+        img {
+            width: 150px;
+        }
+
+    }
 
 }

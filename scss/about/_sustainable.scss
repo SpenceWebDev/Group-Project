@@ -4,12 +4,11 @@
 
     img {
         width: 45%;
-        height: 815px;
         object-fit: cover;
     }
 
     p {
-        font-size: 2vw;
+        font-size: 3vw;
         margin: auto;
         margin-right: 50px;
         font-family: $main-heading-font;
@@ -24,12 +23,28 @@
         }
 
         p {
-            position: absolute;
-            bottom: 0;
+            position: static;
             padding: 50px;
             width: 100%;
             background-color: black;
             color: white;
         }
     }
+
+    @media screen and (max-width:1000px) {
+
+        p {
+            padding: 25px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+
+        margin-bottom: 20px;
+
+        p {
+            font-size: 6vw;
+        }
+    }
+    
 }
