@@ -8,13 +8,12 @@
     position: relative;
 
     .collection-banner-txt{
-
         margin-left: 100px;
         position: absolute;
         bottom: 0;
         left: 0;
         background-color:rgba(255, 255, 255, 0.658);
-        padding: 20px;
+        padding: 40px;
         border: 5px solid #000; 
         
         h1 {
@@ -31,5 +30,38 @@
     img {
         width: 55%;
         object-fit: cover;
+    }
+
+    @media screen and (max-width: 1500px) {
+        img {
+            width: 100%;
+            object-position: 50% 25%;
+        }
+
+        .collection-banner-txt {
+            margin: 0;
+            padding-left: 100px; 
+            border: none;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+
+        .collection-banner-txt {
+            width: 100%;
+            padding: 25px;
+
+            h1 {
+                font-size: 8vw;
+            }
+
+            h2 {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        height: 450px;
     }
 }

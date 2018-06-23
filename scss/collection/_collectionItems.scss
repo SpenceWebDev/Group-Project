@@ -9,6 +9,7 @@
     padding-top: 200px;
 
     img {
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -20,5 +21,29 @@
 
     p {
         text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 1500px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 678px);
+        grid-row-gap: 100px;
+    }
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 678px);
+
+        img {
+            object-position: 50% 0;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        padding: 100px 25px;
+        grid-template-rows: repeat(6, 400px);
     }
 }
