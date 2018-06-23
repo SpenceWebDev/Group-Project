@@ -4,13 +4,17 @@
     padding: 75px 125px;
     
     p {
-        font-size: 3vw;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
     }
 
     @media screen and (max-width:1000px) {
         padding: 45px;
+
+        p {
+            font-size: 3vw;
+        }
     }
 
     @media screen and (max-width: 550px) {
