@@ -1,8 +1,6 @@
 .sign-in-container {
-    
     width: 800px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px auto;
     border: 3px solid $brand-color;
 
     h1 {
@@ -11,6 +9,21 @@
         margin-bottom: 50px;
         padding: 45px 0;
         border-bottom: 2px solid $brand-color;
+    }
+
+    // @media screen and (max-width:1000px) {
+    //     width: 75%;
+    // }
+
+    @media screen and (max-width:1000px) {
+        border: none;
+        margin-top: 50px;
+        width: 90%;
+
+        h1 {
+            border: none;
+            margin-bottom: 0;
+        }
     }
 
 }
