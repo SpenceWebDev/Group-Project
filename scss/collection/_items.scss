@@ -2,18 +2,19 @@
     display: flex;
     margin: 100px;
 
-    p {
-        display: inline;
-        font-weight: bold;
-    }
-
     .img-and-bck-container {
         margin-right: 100px;
         width: 300%;
+
         img {
             width: 100%;
             object-fit: cover;
             margin-top: 10px;
+        }
+
+        p {
+            display: inline;
+            font-weight: bold;
         }
     }
 

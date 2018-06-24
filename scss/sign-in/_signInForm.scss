@@ -21,6 +21,10 @@
 
     a {
         color: #000;
+
+        &:hover {
+            color: $brand-color;
+        }
     }
 
     input:not([type="submit"]):not([type="checkbox"]) {
@@ -29,7 +33,7 @@
     }
 
     input[type="submit"] {
-        margin: auto;
+        margin:auto;
         display: block;
         margin-top: 25px;
         margin-bottom: 15px;
@@ -37,6 +41,11 @@
         border: none;
         color: #fff;
         padding: 10px 50px;
+
+        &:hover {
+            background-color: $brand-color;
+            cursor: pointer;
+        }
     }
 
     @media screen and (max-width:1000px) {
