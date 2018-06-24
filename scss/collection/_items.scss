@@ -50,6 +50,11 @@
             font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
+
+            &:hover {
+                background-color: $brand-color;
+                cursor: pointer;
+            }
         }
     }
 
