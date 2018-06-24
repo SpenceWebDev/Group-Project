@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Milk Studios | The Pique Pocket Tee</title>
     <link rel="stylesheet" href="./styles/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral:500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CSpectral:500,800" rel="stylesheet">
     <link rel="stylesheet" href="/styles/collection/collection.css">
 </head>
 <body>
 <header>
-    <h1 class="companyname"><a href="index.html">Milk Studios</h1></a>
+    <h1 class="companyname"><a href="index.html">Milk Studios</a></h1>
     <nav class="nav-bar">
         <ul>
             <li><a href="collection.html">Collection</a></li>
@@ -28,17 +28,19 @@
     <div class="item-text">
         <h1>$40 <br>The Pique Pocket Tee</h1>
         <p>The best of a polo—in a tee. This pocket crew is made from a classic pique cotton for an unexpected look. Same polo feel, just without the collar.</p>
-        <div class="select-size">
-            <label for="size">Select size:</label>
-            <select name="sizes" id="size">
-                <option value="extra-small">XS</option>
-                <option value="small">S</option>
-                <option value="medium">M</option>
-                <option value="large">L</option>
-                <option value="extra-large">XL</option>
-            </select>
-        </div>
-        <a href="sign-in.html"><button type=button>Add to cart</button></a>
+        <form action="./sign-in.html" method="GET" name="item-select">
+            <div class="select-size">
+                <label for="size">Select size:</label>
+                <select name="sizes" id="size">
+                    <option value="extra-small">XS</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="extra-large">XL</option>
+                </select>
+            </div>
+            <input type="submit" value="add to cart">
+        </form>
     </div>
 </main>
 </body>
