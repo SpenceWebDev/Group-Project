@@ -7,17 +7,19 @@
     }
 
     .img-and-bck-container {
-        width: 50%;
         margin-right: 100px;
-
+        width: 300%;
         img {
+            width: 100%;
             object-fit: cover;
+            margin-top: 10px;
         }
     }
 
     .item-text {
-        width: 50%;
-        margin: auto;
+        width: 100%;
+        margin: auto 0;
+        text-transform: capitalize;
 
         h1 {
             font-size: 35px;
@@ -50,7 +52,32 @@
             text-transform: uppercase;
         }
     }
-        
-    
+
+    @media screen and (max-width: 1300px){
+
+        flex-direction: column;
+        margin-top: 50px;
+
+        .img-and-bck-container {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 45px;
+
+           img {
+               display: block;
+               width: 100%;
+           }
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        margin: 20px;
+        margin-top: 35px;
+        margin-bottom: 70px;
+
+        button {
+            width: 100%;
+        }
+    }
     
 }
