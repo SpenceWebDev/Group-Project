@@ -1,0 +1,56 @@
+.items-container {
+    display: flex;
+    margin: 100px;
+
+    p {
+        display: inline;
+    }
+
+    .img-and-bck-container {
+        width: 50%;
+        margin-right: 100px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .item-text {
+        width: 50%;
+        margin: auto;
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .select-size {
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            select {
+                padding: 5px;
+                font-size: 20px;
+                border: 1.5px solid #000;
+            }
+        }
+
+        button {
+            border: none;
+            color: #fff;
+            background-color: #000;
+            padding: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+        
+    
+    
+}
