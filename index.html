@@ -15,8 +15,9 @@
                 <h1 class="companyname">Milk Studios</h1>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#collection">Collection</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="sign-in.html"><img src="./images/image.png" alt="shopping bag icon" id="shopping-bag"></a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#findus">Find Us</a></li>
                 </ul>
             </nav>
@@ -26,8 +27,8 @@
         <div class="banner">
 			<img alt="Woman In Yellow Dress" src="images/banner.jpg">
 			<div class="centered">
-				<h1>summer 18'</h1>
-				<h2><a href="#collection">shop the collection</a></h2>
+                <h1>summer 18'</h1>
+				<h2><a href="collection.html">shop the collection</a></h2>
 			</div>
         </div>
 
@@ -60,25 +61,35 @@
                     </div>
                   </div>
 
-    <!--
-        
-        <div class="content-container">
-            <div class="box-1">
-                <img src="images/homewoman.jpg" alt="Women In Red Top">
-            </div>
-            <div class="box-2">
-                <h1>Hello,<br>we are <span style="color: #5893A8">milk studios.</span></h1>
-                <p>Located in Vancouver, BC. Our goal is to deliver quality garments using ethical and sustainable sources. All of our garments are produced by certified           manufacturing partners at home and across the globe.</p>
-            </div>
-            <div class="box-3">
-                <img src="images/vancouver.png" alt="Vancouver City Street Photo">
-            </div>   
-            <div class="box-4">
-                <img src="images/clothing-rack.png" alt="Clothes On Clothing Rack">
-            </div>
-		</div>  -->
+                  <!-- Mobile Drop Down Menu-->
+                  <div class="drop-down-mobile">
+
+                        <div id="topNav" class="navigation">
+                                <span id="closebtn" onclick="navToggle()">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                </span>
+                              
+                              <ul class="menulist">
+                                <li><a class="menuitems" href="collection.html">Collection</a></li>		
+                                <li><a class="menuitems" href="about.html">About</a></li>				
+                                <li><a class="menuitems" href="findus.html">Find Us</a></li>
+                              </ul>			
+                              </div>
+                              
+                              <div id="main">
+
+                  </div>
+                  
+                      </div>
     </main>
 
-    
+    <footer>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./scripts/mobile-drop-down.js"></script>
 </body>
 </html>

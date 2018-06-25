@@ -36,3 +36,61 @@
     margin-bottom: 40px;
     transition: ease-in-out 0.4s all;
 }
+
+/*Banner Media Queries Start*/
+@media only screen and (max-width: 490px){
+    .centered {
+        position: absolute;
+        top: 40%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+    .banner{
+        position: relative;
+        text-align: center;
+    }
+    
+    .banner a{
+        color: white;
+        background-color: black;
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: $main-heading-font;
+        text-decoration: none;
+        list-style: none;
+        font-size: 2.5vw;
+        transition: ease-in-out 0.4s all;
+    }
+    
+    .banner a:hover{
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+    
+    .banner h1{
+        font-family: $main-heading-font;
+        color: white;
+        text-transform: capitalize;
+        font-size: 7.5vw;
+        width: 225px;
+        margin-top: 150px;
+        margin-bottom: 15px;
+        transition: ease-in-out 0.4s all;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .companyname{
+        display: none;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    
+}
+/*Banner Media Queries End*/
