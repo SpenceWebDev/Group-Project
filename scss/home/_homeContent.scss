@@ -1,0 +1,474 @@
+/*Content-Container Styles Start*/
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "Woman white-background" "Woman clothing-rack";
+    margin: 35px;
+  }
+
+  .grid-container div{
+  }
+  
+  .Woman {
+    grid-area: Woman;
+  }
+
+  .Woman img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vancouver {
+    grid-area: 1 / 2 / 1 / 2;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    
+  }
+  
+  .clothing-rack {
+    grid-area: clothing-rack;
+
+    img {
+    height: 100%;
+    width: 100%;
+    }
+    
+  }
+  
+  .milk-studio {
+    grid-area: 1 / 2 / 1 / 2;
+    z-index: 2;
+    width: 75%;
+    font-size: 50px;
+  }
+
+  .milk-studio p{
+      font-size: 25px;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 130px;
+  }
+
+  .milk-studio h1{
+    margin-left: 130px;
+    margin-top: 130px;
+    margin-bottom: 25px;
+  }
+  
+  .white-background {
+    grid-area: white-background;
+    background-color: rgba(255, 255, 255, 0.780);
+    z-index: 1;
+  }
+
+  .grid-container-tablet{
+      display: none;
+  }
+
+  .drop-down-mobile{
+      display: none;
+  }
+
+  body{
+      background-color: white;
+  }
+
+  .smartphone-grid-container{
+      display: none;
+  }
+  
+
+/*Content-Container Styles End*/
+
+/*Home Media Queries Start*/
+
+/*Tablet*/
+
+@media only screen and (max-width: 1680px){
+    .milk-studio p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 110px;
+    }
+
+    .milk-studio{
+        width: 83%;
+    }
+  
+    .milk-studio h1{
+      margin-left: 110px;
+      margin-top: 120px;
+      margin-bottom: 25px;
+      font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .milk-studio p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    .milk-studio{
+        width: 93%;
+    }
+  
+    .milk-studio h1{
+      margin-left: 60px;
+      margin-top: 80px;
+      margin-bottom: 25px;
+      font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .milk-studio p{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 55px;
+    }
+
+    .milk-studio{
+        width: 83%;
+    }
+  
+    .milk-studio h1{
+      margin-left: 55px;
+      margin-top: 70px;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-container-tablet {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: "tablet-milk-studios tablet-woman";
+      }
+    
+      .tablet-milk-studios {
+        grid-area: tablet-milk-studios;
+      }
+
+      .tablet-milk-studios h1{
+        margin-top: 75px;
+        font-size: 45px;
+        margin-left: 35px;
+    }
+
+      .tablet-milk-studios p{
+          margin-top: 20px;
+          font-size: 24px;
+          margin-left: 35px;
+          margin-right: 15px;
+      }
+      
+      .tablet-woman {
+        grid-area: tablet-woman;
+      }
+      
+      .tablet-woman img{
+          margin-bottom: 10px;
+          margin-top: 75px;
+      }
+
+      .clothing-rack{
+          display: none;
+      }
+
+      .Woman{
+          display: none;
+      }
+
+      .milk-studio{
+          display: none;
+      }
+
+      .vancouver{
+          display: none;
+      }
+
+      .white-background{
+          display: none;
+      }
+
+}
+
+ /*Smartphone*/
+@media only screen and (max-width: 750px) {
+    .grid-container-tablet {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: "tablet-milk-studios tablet-woman";
+      }
+    
+      .tablet-milk-studios {
+        grid-area: tablet-milk-studios;
+      }
+
+      .tablet-milk-studios h1{
+        margin-top: 75px;
+        font-size: 45px;
+        margin-left: 35px;
+    }
+
+      .tablet-milk-studios p{
+          margin-top: 20px;
+          font-size: 24px;
+          margin-left: 35px;
+          margin-right: 15px;
+      }
+      
+      .tablet-woman {
+        grid-area: tablet-woman;
+      }
+      
+      .tablet-woman img{
+          margin-bottom: 10px;
+          margin-top: 75px;
+      }
+
+      .clothing-rack{
+          display: none;
+      }
+
+      .Woman{
+          display: none;
+      }
+
+      .milk-studio{
+          display: none;
+      }
+
+      .vancouver{
+          display: none;
+      }
+
+      .white-background{
+          display: none;
+      }
+
+      .drop-down-mobile{
+          display: block;
+      }
+
+}
+
+@media only screen and (max-width: 710px) {
+    .grid-container-tablet {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: "tablet-milk-studios tablet-woman";
+      }
+    
+      .tablet-milk-studios {
+        grid-area: tablet-milk-studios;
+      }
+
+      .tablet-milk-studios h1{
+        margin-top: 75px;
+        font-size: 35px;
+        margin-left: 35px;
+    }
+
+      .tablet-milk-studios p{
+          margin-top: 20px;
+          font-size: 18px;
+          margin-left: 35px;
+          margin-right: 15px;
+      }
+      
+      .tablet-woman {
+        grid-area: tablet-woman;
+      }
+      
+      .tablet-woman img{
+          margin-bottom: 10px;
+          margin-top: 75px;
+      }
+
+      .clothing-rack{
+          display: none;
+      }
+
+      .Woman{
+          display: none;
+      }
+
+      .milk-studio{
+          display: none;
+      }
+
+      .vancouver{
+          display: none;
+      }
+
+      .white-background{
+          display: none;
+      }
+
+}
+
+@media only screen and (max-width: 555px) {
+    .grid-container-tablet {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: "tablet-milk-studios tablet-woman";
+      }
+    
+      .tablet-milk-studios {
+        grid-area: tablet-milk-studios;
+      }
+
+      .tablet-milk-studios h1{
+        margin-top: 75px;
+        font-size: 30px;
+        margin-left: 35px;
+    }
+
+      .tablet-milk-studios p{
+          margin-top: 20px;
+          font-size: 18px;
+          margin-left: 35px;
+          margin-right: 15px;
+      }
+      
+      .tablet-woman {
+        grid-area: tablet-woman;
+      }
+      
+      .tablet-woman img{
+          margin-bottom: 10px;
+          margin-top: 75px;
+      }
+
+      .Woman{
+          display: none;
+      }
+
+      .milk-studio{
+          display: none;
+      }
+
+      .vancouver{
+          display: none;
+      }
+
+      .white-background{
+          display: none;
+      }
+
+}
+
+
+
+@media only screen and (max-width: 490px){
+    .tablet-milk-studios h1{
+        margin-top: -15px;
+        font-size: 35px;
+        margin-left: 45px;
+        margin-right: 35px;
+        z-index: 9999;
+        position: absolute;
+    }
+
+      .tablet-milk-studios p{
+          margin-top: 65px;
+          font-size: 20px;
+          margin-left: 45px;
+          margin-right: 35px;
+          z-index: 9999;
+          position: absolute;
+      }
+
+      .vancouver{
+          display: none;
+      }
+
+      .white-background{
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.780);
+        width: 365px;
+        height: 250px;
+        left: 0;
+        z-index: 9999;
+      }
+
+    .tablet-woman img{
+          margin-top: 280px;
+      }
+}
+
+@media only screen and (max-width: 420px){
+    .tablet-milk-studios h1{
+        font-size: 23px;
+    }
+
+    .tablet-milk-studios p{
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    .tablet-woman img{
+        margin-top: 170px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .tablet-milk-studios h1{
+        font-size: 23px;
+    }
+
+    .tablet-milk-studios p{
+        font-size: 14px;
+    }
+
+    .companyname{
+        font-size: 30px;
+    }
+
+    .tablet-woman img{
+        margin-top: 170px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .tablet-milk-studios h1{
+        font-size: 23px;
+    }
+
+    .tablet-milk-studios p{
+        font-size: 13px;
+    }
+
+    .tablet-woman img{
+        margin-top: 170px;
+    }
+}
+
+@media only screen and (max-width: 270px){
+    .tablet-milk-studios h1{
+        font-size: 20px;
+    }
+
+    .tablet-milk-studios p{
+        font-size: 10px;
+    }
+}
+/*Home Media Queries End*/
