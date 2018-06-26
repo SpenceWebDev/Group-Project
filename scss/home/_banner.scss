@@ -37,8 +37,10 @@
     transition: ease-in-out 0.4s all;
 }
 
+
+
 /*Banner Media Queries Start*/
-@media only screen and (max-width: 490px){
+@media only screen and (max-width: 750px){
     .centered {
         position: absolute;
         top: 40%;
@@ -72,8 +74,8 @@
         font-family: $main-heading-font;
         color: white;
         text-transform: capitalize;
-        font-size: 7.5vw;
-        width: 225px;
+        font-size: 6vw;
+        width: 290px;
         margin-top: 150px;
         margin-bottom: 15px;
         transition: ease-in-out 0.4s all;
@@ -84,13 +86,13 @@
     }
 
     .companyname{
-        display: none;
+        display: block;
     }
 
     .banner{
-        display: none;
+        display: block;
     }
-
-    
 }
+
+
 /*Banner Media Queries End*/
