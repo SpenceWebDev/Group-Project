@@ -23,6 +23,10 @@
     font-family: $main-font;
 }
 
+.contact h1{
+    font-family: $main-font;
+}
+
 .contact ul li{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -32,6 +36,10 @@
     margin-left: 8%;
     font-size: 25px;
     margin-top: 40px;
+    font-family: $main-font;
+}
+
+.address h1{
     font-family: $main-font;
 }
 
@@ -84,6 +92,7 @@
 
     .address{
         font-size: 20px;
+        margin-top: 20px;
     }
 
     .social-media-icons ul li{
