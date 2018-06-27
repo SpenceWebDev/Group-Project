@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+.social-media-icons{
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.social-media-icons img{
+    width: 20px;
+    height: 20px;
+}
+
+.social-media-icons ul li{
+ float: right;
+ margin-left: 30px;
+}
+
+.contact{
+    float: right;
+    margin-right: 5%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.address{
+    margin-left: 5%;
+    font-size: 25px;
+}
