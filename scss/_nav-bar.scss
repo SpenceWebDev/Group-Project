@@ -42,6 +42,14 @@
     margin-top: 30px;
     width: 55px;
 }
+
+.menuitems{
+    display: none;
+}
+
+#main{
+    display: none;
+}
 /*Navigation Bar Styles End*/
 
 /*Nav-Bar Media Queries Start*/
@@ -67,7 +75,8 @@
         position: relative;
         z-index: 9999;
         top: 0;
-        margin-top: -28px;
+        margin-top: -25px;
+        margin-bottom: -25px;
     }
 
 
@@ -78,7 +87,7 @@
     .navigation {
         width: 100%;
         position: fixed;
-        z-index: 1;
+        z-index: 9998;
         height: 0;
         top: 0;
         left: 0;

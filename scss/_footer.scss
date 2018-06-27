@@ -100,3 +100,29 @@
         margin-left: 2px;
        }
 }
+
+@media only screen and (max-width: 565px){
+    .contact{
+        font-size: 20px;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .social-media-icons img{
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .address{
+        font-size: 20px;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .social-media-icons ul li{
+        margin-left: 2px;
+       }
+}
+
+
