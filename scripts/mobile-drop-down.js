@@ -30,7 +30,7 @@ function navToggle() {
 	} 
 	//to open
 	else if (nav.style.height <= "50px") {
-	nav.style.height = "100%";
+	nav.style.height = "170%";
 	main.style.marginTop = "275px";
     	var i = 0;
     	for (i = 0; i < menu.length; i++){

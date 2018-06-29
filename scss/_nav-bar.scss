@@ -86,7 +86,7 @@
     
     .navigation {
         width: 100%;
-        position: fixed;
+        position: absolute;
         z-index: 9998;
         height: 0;
         top: 0;
@@ -194,6 +194,20 @@
         margin: auto;
         padding: 16px;
         font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    #closebtn {
+        right: 0;
+        
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #closebtn {
+       right: 1px;
+       margin-top: 7px;
     }
 }
 

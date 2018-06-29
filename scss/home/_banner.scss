@@ -27,7 +27,7 @@
     border: 2px solid black;
 }
 
-.banner h1{
+.banner h2{
     font-family: $main-heading-font;
     font-size: 100px;
     color: white;
@@ -43,13 +43,13 @@
 @media only screen and (max-width: 750px){
     .centered {
         position: absolute;
-        top: 40%;
-        left: 65%;
+        margin-top: 55px;
         transform: translate(-50%, -50%);
     }
     .banner{
         position: relative;
         text-align: center;
+        width: 100%;
     }
     
     .banner a{
@@ -64,19 +64,12 @@
         transition: ease-in-out 0.4s all;
     }
     
-    .banner a:hover{
-        color: black;
-        background-color: white;
-        border: 2px solid black;
-    }
-    
-    .banner h1{
+    .banner h2{
         font-family: $main-heading-font;
         color: white;
         text-transform: capitalize;
         font-size: 6vw;
         width: 290px;
-        margin-top: 150px;
         margin-bottom: 15px;
         transition: ease-in-out 0.4s all;
     }

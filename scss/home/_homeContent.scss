@@ -374,7 +374,7 @@
       }
 }
 
-@media only screen and (max-width: 565px){
+@media only screen and (max-width: 590px){
     .tablet-milk-studios h1{
         font-size: 23px;
     }
@@ -391,7 +391,13 @@
     
 }
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 590px){
+    .companyname{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 465px){
     .tablet-milk-studios h1{
         font-size: 23px;
     }
@@ -409,7 +415,7 @@
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 435px){
     .tablet-milk-studios h1{
         font-size: 23px;
     }
@@ -423,13 +429,23 @@
     }
 }
 
-@media only screen and (max-width: 270px){
+@media only screen and (max-width: 410px){
     .tablet-milk-studios h1{
         font-size: 20px;
     }
 
     .tablet-milk-studios p{
-        font-size: 10px;
+        font-size: 12px;
     }
+
+    .Woman{
+        display: none;
+    }
+
+    .tablet-woman{
+        width: 80vw;
+    }
+
+    
 }
 /*Home Media Queries End*/
