@@ -3,6 +3,7 @@
     top: 40%;
     left: 65%;
     transform: translate(-50%, -50%);
+    width: 200px;
 }
 .banner{
     position: relative;
@@ -69,7 +70,6 @@
         color: white;
         text-transform: capitalize;
         font-size: 6vw;
-        width: 290px;
         margin-bottom: 15px;
         transition: ease-in-out 0.4s all;
     }
