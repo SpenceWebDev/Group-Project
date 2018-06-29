@@ -1,9 +1,8 @@
 .centered {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
-    width: 200px;
 }
 .banner{
     position: relative;
@@ -20,6 +19,7 @@
     list-style: none;
     font-size: 1.5vw;
     transition: ease-in-out 0.4s all;
+    white-space: nowrap;
 }
 
 .banner a:hover{
@@ -36,6 +36,7 @@
     font-size: 6vw;
     margin-bottom: 40px;
     transition: ease-in-out 0.4s all;
+    white-space: nowrap;
 }
 
 
