@@ -197,18 +197,13 @@
     }
 }
 
-@media only screen and (min-width: 450px){
+@media only screen and (max-width: 750px){
     #closebtn {
         right: 0;
-        
+        margin-top: 7px;
     }
 }
 
-@media only screen and (max-width: 330px){
-    #closebtn {
-       right: 1px;
-       margin-top: 7px;
-    }
-}
+
 
 /*Nav-Bar Media Queries End*/
