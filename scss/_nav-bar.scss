@@ -105,15 +105,23 @@
     }
     
     .navigation ul {
-        margin-top: 75px;
+        margin-top: 150px;
         text-align: center;
         list-style: none; 
         margin-left: auto;
         margin-right: auto;
+        justify-content: space-between;
     }
     
     .menulist {
         width: 200px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+
+        li:last-child a {
+            font-weight: bold;
+        }
     }
     
     .line1, .line2, .line3 {
@@ -214,14 +222,16 @@
     }
 }
 
+@media only screen and (max-height: 450px){
+    .navigation ul {
+        margin-top: 75px;
+    }
+}
+
 @media only screen and (max-width: 465px){
     .companyname{
         font-size: 30px;
     }
 }
-
-
-
-
 
 /*Nav-Bar Media Queries End*/
