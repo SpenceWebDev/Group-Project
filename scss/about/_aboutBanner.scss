@@ -16,6 +16,7 @@
             margin-left: 45px;
             color: #fff;
         }
+
     @media screen and (max-width: 1000px) {
     
         h2 {
@@ -28,10 +29,18 @@
         }
     }
 
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 750px) {
+        
+        h2 {
+            line-height: 375%;
+        }
+    }
+
+    @media screen and (max-width: 500px){
 
         h2 {
             font-size: 11vw;
+            line-height: 445%;
         }
     }
 }
