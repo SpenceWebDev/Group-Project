@@ -17,7 +17,7 @@
         <li><a href="sign-in.html"><img src="./images/image.png" alt="shopping bag icon" id="shopping-bag"></a></li>
         <li><a href="collection.html">Collection</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#findus">Find Us</a></li>
+        <li><a href="findus.html">Find Us</a></li>
     </ul>
 </nav>
 </header>
@@ -39,6 +39,57 @@
         <p class="forgot-pass"><a href="./under-cons.html">Forgot password?</a></p>
         <p class="sign-up"><a href="./under-cons.html">Sign up</a></p>
     </form>
+<!-- Mobile Drop Down Menu-->
+<div class="drop-down-mobile">
+    <div id="topNav" class="navigation">
+        <span id="closebtn" onclick="navToggle()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </span>
+        <ul class="menulist">
+            <li><a class="menuitems" href="collection.html">Collection</a></li>		
+            <li><a class="menuitems" href="about.html">About</a></li>				
+            <li><a class="menuitems" href="findus.html">Find Us</a></li>
+            <br>
+            <br>
+            <li><a class="menuitems" href="sign-in.html">signin</a></li>
+        </ul>			
+    </div>    
+    <div id="main"></div>
+</div>
 </main>
+<footer class="footer">
+    <div class="address">
+        <h2>Main Store</h2>
+        <ul>
+            <li>000 Seymour St, Vancouver</li>
+            <li>British Columbia</li>
+            <li>A1B 2C3</li>
+            <li>Canada</li>
+            <li>Monday To Friday: 9:00am - 5:00pm</li>
+        </ul>
+        <div class="contact">
+            <ul>
+                <li>(604) 123-1234</li>
+                <li>info@milkstudios.ca</li>
+                <h2>Follow Us</h2>
+                <div class="social-media-icons">
+                    <ul>
+                        <li><a href="#"><img src="images/Facebook-milkbottle.svg" alt="Facebook Social Media Icon"></a></li>
+                        <li><a href="#"><img src="images/Twitter-milkbottle.svg" alt="Twitter Social Media Icon"></a></li>
+                        <li><a href=""><img src="images/Instagram-milkbottle.svg" alt=""></a></li>
+                    </ul>
+                </div>   
+            </ul>
+        </div>
+    </div>
+</footer>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script src="./scripts/mobile-drop-down.js"></script>
 </body>
 </html>
