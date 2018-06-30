@@ -11,6 +11,7 @@ footer li {
 
 .social-media-icons{
     display: flex;
+    margin-left: 20px;
 }
 
 .social-media-icons img{
@@ -20,8 +21,6 @@ footer li {
 
 .social-media-icons ul li{
     float: right;
-    margin-left: 2px;
-    margin-left: 20px;;
 }
 
 .contact{
@@ -32,20 +31,22 @@ footer li {
     margin-top: -200px;
 }
 
-.contact ul li{
-    margin-top: 15px;
-    margin-bottom: 15px;
+
+.contact ul li :first-child {
+    margin-top: 0;
 }
 
 .address{
     margin-left: 8%;
     font-size: 25px;
     margin-top: 40px;
+    margin-bottom: 25px;
     width: 85vw;
 }
 
-.address ul li{
-    margin-top: 10px;
+.address ul li,
+.contact ul li {
+    line-height: 1.5;
 }
 
 .footer:before{
@@ -82,7 +83,7 @@ footer li {
 @media only screen and (max-width: 775px){
     .contact{
         font-size: 20px;
-        margin-top: -185px;
+        padding-top: 20px;
     }
 
     .social-media-icons img{
@@ -104,9 +105,9 @@ footer li {
     
 }
 
-@media only screen and (max-width: 665px){
+@media only screen and (max-width: 700px){
     .contact{
-        font-size: 20px;
+        font-size: 16px;
         margin-top: -155px;
     }
 
@@ -135,7 +136,7 @@ footer li {
 
 @media only screen and (max-width: 565px){
     .contact{
-        font-size: 18px;
+        font-size: 14px;
         margin-top: -143px;
     }
 
@@ -158,10 +159,10 @@ footer li {
     
 }
 
-@media only screen and (max-width: 490px){
+@media only screen and (max-width: 520px){
 
     .contact{
-        font-size: 18px;
+        font-size: 14px;
         margin-top: -135px;
     }
 
@@ -190,20 +191,16 @@ footer li {
 
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 470px){
 
     .contact{
         position: relative;
         float: left;
         margin: 0 auto;
+        margin-bottom: 25px;
         text-align: left;
         font-size: 15px;
     }
-
-
-
-    
-
 
     .social-media-icons{
         margin-left: -15px;
