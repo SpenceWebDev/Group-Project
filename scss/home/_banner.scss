@@ -57,7 +57,7 @@
     .banner a{
         color: white;
         background-color: black;
-        padding: 5px;
+        padding: 8px;
         text-transform: uppercase;
         font-family: $main-heading-font;
         text-decoration: none;
@@ -70,7 +70,7 @@
         font-family: $main-heading-font;
         color: white;
         text-transform: capitalize;
-        font-size: 6vw;
+        font-size: 8vw;
         margin-bottom: 15px;
         transition: ease-in-out 0.4s all;
     }
@@ -81,6 +81,22 @@
 
     .banner{
         display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .centered {
+        padding-top: 25px;
+
+        h2 {
+            font-size: 10vw;
+            margin-bottom: 5px;
+        } 
+        
+        a {
+            font-size: 3vw;
+            padding: 5px;
+        }
     }
 }
 
