@@ -4,20 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Location</title>
+    <link href="styles/master.css" rel="stylesheet">
+    <link href="styles/find-us/findus.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CSpectral:500,800" rel="stylesheet">
+    <title>Find Us</title>
 </head>
 <body>
-<header>
-    <h1>Milk Studios</h1>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Collection</li>
-            <li>Location</li>
-            <li>Account</li>
-        </ul>
-    </nav>
-</header>
-    
+    <header>
+        <a href=""><h1 class="companyname">Milk Studios</h1></a>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="sign-in.html"><img src="./images/image.png" alt="shopping bag icon" id="shopping-bag"></a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+
+            <div class="grid-container">
+                    <div class="google-maps">
+                        <img src="images/googlemaps.png" alt="google maps">
+                    </div>
+                    <div class="nearest-location">
+                        <div class="nearest-location-text">
+                                <h2 class="heading-address">Postal code, City or Province</h2>
+                                <form action="" method="get">
+                                    <input type="text" name="Address" placeholder="Enter Address Here" style="text-align: center" id="address"/>
+                                </form>
+                                <h2 class="heading-address">Nearby Stores Within 5 km</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-us">
+                        <h2 class="heading-contact">Contact Us</h2>
+                    </div>
+                  </div>
+
+    <!-- Mobile Drop Down Menu-->
+<div class="drop-down-mobile">
+
+    <div id="topNav" class="navigation">
+            <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </span>
+          
+          <ul class="menulist">
+            <li><a class="menuitems" href="collection.html">Collection</a></li>		
+            <li><a class="menuitems" href="about.html">About</a></li>				
+            <li><a class="menuitems" href="findus.html">Find Us</a></li>
+            <li><a class="menuitems" href="sign-in.html">sign in</a></li>
+          </ul>			
+          </div>
+          
+          <div id="main"></div>
+
+  </div>
+    </main>
+
+    <footer class="footer">
+        <div class="address">
+            <h2>Main Store</h2>
+            <ul>
+                <li>000 Seymour St, Vancouver</li>
+                <li>British Columbia</li>
+                <li>A1B 2C3</li>
+                <li>Canada</li>
+                <li>Monday To Friday: 9:00am - 5:00pm</li>
+            </ul>
+            <div class="contact">
+                    <ul>
+                        <li>(604) 123-1234</li>
+                        <li>info@milkstudios.ca</li>
+                        <li class="follow-txt">Follow Us</li>
+                    </ul>
+                    <div class="social-media-icons">
+                        <ul>
+                            <li><a href="#"><img src="images/Facebook-milkbottle.svg" alt="Facebook Social Media Icon"></a></li>
+                            <li><a href="#"><img src="images/Twitter-milkbottle.svg" alt="Twitter Social Media Icon"></a></li>
+                            <li><a href=""><img src="images/Instagram-milkbottle.svg" alt=""></a></li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./scripts/mobile-drop-down.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+@charset 'UTF-8';
+@import 'variables';
+
+.heading-address{
+    font-family: $main-font;
+    margin-top: 15px;
+}
+
+.heading-contact{
+    font-family: $main-font;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "google-maps nearest-location" "contact-us .";
+  }
+  
+  .google-maps {
+    grid-area: google-maps;
+    margin-left: 30px;
+    margin-top: 45px;
+    width: 150%;
+    height: auto;
+  }
+  
+  .nearest-location {
+    grid-area: nearest-location;
+    margin-left: 400px;
+    margin-top: 45px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .nearest-location-text{
+      margin-top: 45%;
+      font-size: 25px;
+  }
+
+  #address{
+      border: none;
+      border-bottom: 1px solid gray;
+      margin-top: 15px;
+      font-size: 25px;
+  }
+
+  .contact-us {
+    grid-area: contact-us;
+    border: 3px solid red;
+    margin-top: 115px;
+    margin-left: 585px;
+    text-align: left;
+    width: 100%;
+  }
