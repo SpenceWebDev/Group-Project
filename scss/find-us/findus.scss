@@ -1,6 +1,13 @@
 @charset 'UTF-8';
 @import 'variables';
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .heading-address{
     font-family: $main-font;
     margin-top: 15px;
@@ -20,23 +27,24 @@
   
   .google-maps {
     grid-area: google-maps;
-    margin-left: 30px;
+  }
+
+  .google-maps img{
+    margin-left: 45px;
     margin-top: 45px;
-    width: 150%;
-    height: auto;
+    width: 950px;
   }
   
   .nearest-location {
     grid-area: nearest-location;
-    margin-left: 400px;
-    margin-top: 45px;
+    margin-left: 45px;
     width: 100%;
     height: auto;
     text-align: center;
   }
 
   .nearest-location-text{
-      margin-top: 45%;
+      margin-top: 100%;
       font-size: 25px;
   }
 
@@ -49,9 +57,54 @@
 
   .contact-us {
     grid-area: contact-us;
-    border: 3px solid red;
-    margin-top: 115px;
-    margin-left: 585px;
+    margin-top: 18px;
+    margin-left: 525px;
     text-align: left;
-    width: 100%;
+    width: auto;
   }
+
+  .question{
+      text-align: center;
+  }
+
+  .question p{
+      font-size: 25px;
+  }
+  .question h2{
+      font-size: 44px;
+      font-family: $main-font;
+  }
+
+  .form-align-inside input:not([type='submit']) {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 16%;
+    margin-left: 325px;
+}
+
+
+
+#comment{
+    border: none;
+    position: relative;
+    font-family: $main-font;
+    display: block;
+    padding: 5px 5px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: black;
+    width: 750px;
+    height: 300px;
+    border: 2px solid lightgray;
+}
