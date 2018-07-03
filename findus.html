@@ -24,25 +24,70 @@
             </header>
     
     <main>
-                <div class="content">
-                        <p>test1</p>
-                        <p>test2</p>
-                        <p>test3</p>
-                        <!-- This is where it stops workings -->
-                        <p>test4</p>
-                        <p>test5</p>
-                        <p>test6</p>
-                        <p>test7</p>
-                        <p>test8</p>
-                        <p>test9</p>
-                        <p>test10</p>
-                        <p>test11</p>
-                        <p>test12</p>
-                        <p>test13</p>
-                        <p>test14</p>
-                        <p>test15</p>
-                        <p>test16</p>
-                        <p>test17</p>
+
+                <div class="form">
+                        <form action="./20-thank-you.html" method="post">
+                            <!--radio -->
+                            <div>
+                                <label for="FirstName" required></label>
+                                <input type="FirstName" name="FirstName" id="FirstName" placeholder="First Name" />
+                            </div>
+
+                            <div>
+                                <label for="LastName" required></label>
+                                <input type="LastName" name="LastName" id="LastName" placeholder="Last Name" />
+                            </div>
+
+                            <div>
+                                <label for="email" required></label>
+                                <input type="email" name="email" id="email" placeholder="E-Mail"/>
+                            </div>
+
+                            <div>
+                                <label for="comments"></label>
+                                <textarea name="comments" id="comments" cols="60" rows="10" placeholder="Write Us!"></textarea>
+                            </div>
+
+                            <div>
+                                <input id="send" name="submit" type="submit" value="Send" />
+                            </div>
+                        </form>
+                </div>
+
+                <img src="./images/googlemaps.png" alt="Google Maps Image" id="googlemap-image">
+
+                <div class="nearest-location">
+                        <div class="nearest-location-text">
+                                <h4 class="heading-address">Postal code, City or Province</h4>
+                                <form action="" method="get">
+                                    <input type="text" name="Address" placeholder="Enter Address Here" style="text-align: center" id="address"/>
+                                </form>
+                                <h4 class="heading-address">Nearby Stores Within 25km</h4>
+                        </div>
+                
+                    </div>    
+                
+
+                <!-- Mobile Drop Down Menu-->
+                <div class="drop-down-mobile">
+
+                    <div id="topNav" class="navigation">
+                        <span id="closebtn" onclick="navToggle()">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                        </span>
+                              
+                        <ul class="menulist">
+                            <li><a class="menuitems" href="collection.html">Collection</a></li>		
+                            <li><a class="menuitems" href="about.html">About</a></li>				
+                            <li><a class="menuitems" href="findus.html">Find Us</a></li>
+                            <li><a class="menuitems" href="sign-in.html">sign in</a></li>
+                        </ul>			
+                    </div>
+                              
+                    <div id="main"></div>
+                  
                 </div>
                   
     </main>
