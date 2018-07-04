@@ -5,16 +5,15 @@
         display: flex;
     }
 
-
     #googlemap-image{
         width: 700px;
         height: 100%;
-        margin-left: 80px;
+        margin-left: 120px;
         border: 1px solid gainsboro;
     }
 
     .form{
-        margin-left: 15px;
+        margin-left: 60px;
         width: 520px;
         padding: 35px;
     }
@@ -57,7 +56,7 @@
     }
 
     .nearest-location {
-        margin-left: 80px;
+        margin-left: 145px;
         width: 100%;
         height: auto;
         text-align: center;
@@ -77,49 +76,52 @@
           font-size: 25px;
       }
 
+
+      /* Window Scaling media queries */
     @media only screen and (max-width: 1680px){
         #googlemap-image{
             margin-left: 15px;
         }
+
+        .nearest-location{
+            margin-left: 90px;
+        }
     }
 
-    @media only screen and (max-width: 1590px){
+    @media only screen and (max-width: 1610px){
         #googlemap-image{
             width: 550px;
             margin-left: 60px;
+        }
+
+        .nearest-location{
+            margin-top: -30px;
         }
     }
 
     @media only screen and (max-width: 1500px){
         #googlemap-image{
-            width: 550px;
-            margin-left: 40px;
-        }
-
-        .nearest-location{
-            margin-left: 35px;
-        }
-    }
-
-    @media only screen and (max-width: 1425px){
-        #googlemap-image{
             width: 500px;
             height: 390px;
             margin-left: 20px;
         }
+
+        .nearest-location{
+            margin-left: 95px;
+        }
     }
 
-    @media only screen and (max-width: 1370px){
+    @media only screen and (max-width: 1410px){
         #googlemap-image{
             display: block;
             width: 750px;
             height: 100%;
-            margin-left: 25px;
+            margin-left: 70px;
         }
 
         .nearest-location{
            display: block;
-           margin-left: 125px;
+           margin-left: 160px;
         }
 
         .form{
@@ -127,28 +129,42 @@
         }
     }
 
-    @media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 1265px){
         #googlemap-image{
             margin-top: 55px;
+            margin-left: 60px;
         }
 
         .nearest-location{
-            margin-left:50px;
+            margin-left:90px;
             margin-top: 30px;
         }
     }
 
-    @media only screen and (max-width: 780px){
+    /* Tablet & Mobile Device Media Queries */
+
+    @media only screen and (max-width: 1030px){
         #googlemap-image{
             margin-top: 55px;
         }
 
         .nearest-location{
-            margin-left:45px;
-            margin-top: -50px;
+            margin-left: 40px;
         }
     }
 
+    @media only screen and (max-width: 780px){
+        .nearest-location{
+            margin-left: 25px;
+            margin-top: -55px;
+        }
+
+        #googlemap-image{
+            margin-left: 40px;
+        }
+    }
+
+    
     @media only screen and (max-width: 420px){
 
         main{
@@ -170,6 +186,8 @@
 
         #comments{
             width: 250px;
+            margin-top: 5px;
+            border: 1px solid gray;
         }
 
         #send{
@@ -218,6 +236,7 @@
             z-index: 1;
         }
     }
+        
         
 
 

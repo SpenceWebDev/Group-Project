@@ -30,8 +30,8 @@ function navToggle() {
 	
 	} 
 	//to open
-	else if (nav.style.height <= "50px") {
-	nav.style.height = "100%";
+	else if (nav.style.height <= "60px") {
+	nav.style.height = "112%";
 	main.style.marginTop = "275px";
 	$('body').css('overflow',"hidden");
     	var i = 0;
