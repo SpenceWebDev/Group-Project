@@ -6,9 +6,9 @@
     }
 
     #googlemap-image{
-        width: 700px;
+        width: 825px;
         height: 100%;
-        margin-left: 120px;
+        margin-left: 5px;
         border: 1px solid gainsboro;
     }
 
@@ -53,10 +53,11 @@
 
     #comments{
         font-family: $main-font;
+        border: 2px solid gray;
     }
 
     .nearest-location {
-        margin-left: 145px;
+        margin-left: 100px;
         width: 100%;
         height: auto;
         text-align: center;
@@ -142,66 +143,182 @@
 
 
       /* Window Scaling media queries */
-    @media only screen and (max-width: 1680px){
+    @media only screen and (max-width: 1800px){
         #googlemap-image{
             margin-left: 15px;
         }
 
         .nearest-location{
-            margin-left: 90px;
+            margin-left: 130px;
         }
     }
 
-    @media only screen and (max-width: 1610px){
+    @media only screen and (max-width: 1680px){
         #googlemap-image{
-            width: 550px;
+            width: 700px;
+            margin-left: 25px;
+        }
+
+        .nearest-location{
+            margin-left: 68px;
+        }
+    }
+
+    @media only screen and (max-width: 1625px){
+        #googlemap-image{
+            width: 650px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+
+        .nearest-location{
             margin-left: 60px;
         }
-
-        .nearest-location{
-            margin-top: -30px;
-        }
     }
 
-    @media only screen and (max-width: 1500px){
-        #googlemap-image{
-            width: 500px;
-            height: 390px;
-            margin-left: 20px;
+    @media only screen and (max-width: 1555px){
+
+        main{
+            display: block;
         }
 
-        .nearest-location{
-            margin-left: 95px;
-        }
-    }
-
-    @media only screen and (max-width: 1410px){
         #googlemap-image{
             display: block;
-            width: 750px;
+            width: 950px;
             height: 100%;
-            margin-left: 70px;
+            margin-left: 215px;
         }
 
         .nearest-location{
            display: block;
-           margin-left: 160px;
+           margin-left: 40%;
+           margin-top: -150px;
+           width: 350px;
+           height: auto;
         }
 
         .form{
-            display: none;
+            margin-left: 27%;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 400px;
+            text-align: left;
+            margin-right: 6px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 600px;
+            border: 2px solid gray;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 225px;
+            margin-top: 10px;
+            width: 150px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1180px){
+        main{
+            display: block;
+        }
+        
+        #googlemap-image{
+            display: block;
+            width: 950px;
+            height: 100%;
+            margin-left: 115px;
+        }
+
+        .nearest-location{
+           display: block;
+           margin-left: 38%;
+           margin-top: -175px;
+           width: 350px;
+           height: auto;
+        }
+
+        .form{
+            margin-left: 23%;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 400px;
+            text-align: left;
+            margin-right: 6px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 600px;
+            border: 2px solid gray;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 225px;
+            margin-top: 10px;
+            width: 150px;
         }
     }
 
-    @media only screen and (max-width: 1265px){
+    @media only screen and (max-width: 1072px){
+        main{
+            display: block;
+        }
+        
         #googlemap-image{
-            margin-top: 55px;
+            display: block;
+            width: 950px;
+            height: 100%;
             margin-left: 60px;
         }
 
         .nearest-location{
-            margin-left:90px;
-            margin-top: 30px;
+           display: block;
+           margin-left: 38%;
+           margin-top: -175px;
+           width: 350px;
+           height: auto;
+        }
+
+        .form{
+            margin-left: 20%;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 400px;
+            text-align: left;
+            margin-right: 6px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 600px;
+            border: 2px solid gray;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 225px;
+            margin-top: 10px;
+            width: 150px;
         }
     }
 
@@ -210,13 +327,27 @@
     /*iPad Pro*/
     @media only screen and (max-width: 1024px){
 
+        main{
+            display: block;
+        }
+
+        #FirstName, #LastName, #email{
+            font-size: 2.2em;
+        }
+
+        .form{
+            display: block;
+            margin-left: 17%;
+        }
+
         #googlemap-image{
-            margin-top: 55px;
-            width: 600px;
+            margin-top: 25px;
+            width: 850px;
+            margin-left: 85px;
         }
 
         .nearest-location{
-            margin-left: 40px;
+            margin-left: 36%;
         }
     }
     
@@ -224,86 +355,172 @@
     @media only screen and (max-width: 768px){
 
         #googlemap-image{
-            margin-left: 40px;
-            width: 425px;
+            margin-left: 23px;
+            width: 730px;
+            margin-top: 5px;
         }
 
         .nearest-location{
-            margin-left: 25px;
-            margin-top: -40px;
+            margin-left: 30%;
+        }
+
+        .form{
+            margin-left: 70px;
         }
     }
 
     
-    @media only screen and (max-width: 420px){
+    @media only screen and (max-width: 415px){
 
         main{
             display: block;
         }
-
+        
         #googlemap-image{
-            margin-top: 5px;
-            margin-left: 16px;
-            width: 380px;
-        }
-
-        .form{
             display: block;
-            margin-top: 60px;
-            margin-left: 50px;
-            width: 350px;
-        }
-
-        #comments{
-            width: 250px;
-            margin-top: 5px;
-            border: 1px solid gray;
-        }
-
-        #send{
-            margin-left: 70px;
+            width: 400px;
+            height: 100%;
+            margin-left: 6px;
         }
 
         .nearest-location{
-            display: block;
-            margin-left: 3px;
-            margin-top: -250px;
-            width: 400px;
+           display: block;
+           margin-left: 8%;
+           margin-top: -190px;
+           width: 350px;
+           height: auto;
+        }
+
+        .form{
+            margin-left: 5px;
+            width: 410px;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 270px;
+            text-align: left;
+            margin-right: 6px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 350px;
+            border: 2px solid gray;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 100px;
+            margin-top: 10px;
+            width: 150px;
         }
     }
 
-    @media only screen and (max-width: 380px){
+    @media only screen and (max-width: 375px){
         main{
             display: block;
         }
-
+        
         #googlemap-image{
-            margin-top: 5px;
-            margin-left: 35px;
-            width: 325px;
-        }
-
-        .form{
             display: block;
-            margin-top: 60px;
-            margin-left: 45px;
-            width: 345px;
-        }
-
-        #comments{
-            width: 250px;
-        }
-
-        #send{
-            margin-left: 70px;
+            width: 350px;
+            height: 100%;
+            margin-left: 13px;
         }
 
         .nearest-location{
+           display: block;
+           margin-left: 2%;
+           margin-top: -190px;
+           width: 350px;
+           height: auto;
+        }
+
+        .form{
+            margin-left: 5px;
+            width: 350px;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 270px;
+            text-align: left;
+            margin-right: 6px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 300px;
+            border: 2px solid gray;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 80px;
+            margin-top: 10px;
+            width: 150px;
+        }
+    }
+
+    @media only screen and (max-width: 320px){
+        main{
             display: block;
-            margin-left: 0;
-            margin-top: -250px;
-            width: 400px;
-            z-index: 1;
+        }
+        
+        #googlemap-image{
+            display: block;
+            width: 300px;
+            height: 100%;
+            margin-left: 10px;
+        }
+
+        .nearest-location{
+           display: block;
+           margin-left: 2%;
+           margin-top: -190px;
+           width: 310px;
+           height: auto;
+        }
+
+        .nearest-location-text{
+            font-size: 20px;
+        }
+
+        .form{
+            margin-left: 5px;
+            width: 315px;
+        }
+
+        #FirstName, #LastName, #email{
+            display: inline-block;
+            width: 220px;
+            text-align: left;
+            margin-bottom: 15px;
+            margin-left: 13px;
+            font-size: 1.3em;
+        }
+
+        #comments{
+            width: 280px;
+            border: 2px solid gray;
+            margin-left: -20px;
+            margin-top: -25px;
+        }
+
+        #send{
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 45px;
+            margin-top: 10px;
+            width: 150px;
         }
     }
         
