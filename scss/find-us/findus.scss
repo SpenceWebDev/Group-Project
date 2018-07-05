@@ -124,7 +124,7 @@
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
       }
       .radio input[type="radio"]:checked + span{
-        color:#0B8;  
+        color:#5893A8;  
       }
       .radio input[type="radio"]:checked + span:before{
           content:'';
@@ -207,24 +207,30 @@
 
     /* Tablet & Mobile Device Media Queries */
 
-    @media only screen and (max-width: 1030px){
+    /*iPad Pro*/
+    @media only screen and (max-width: 1024px){
+
         #googlemap-image{
             margin-top: 55px;
+            width: 600px;
         }
 
         .nearest-location{
             margin-left: 40px;
         }
     }
-
-    @media only screen and (max-width: 780px){
-        .nearest-location{
-            margin-left: 25px;
-            margin-top: -55px;
-        }
+    
+    /*iPad*/
+    @media only screen and (max-width: 768px){
 
         #googlemap-image{
             margin-left: 40px;
+            width: 425px;
+        }
+
+        .nearest-location{
+            margin-left: 25px;
+            margin-top: -40px;
         }
     }
 
