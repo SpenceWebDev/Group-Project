@@ -1,4 +1,4 @@
-.under-cons-container {
+.redirect-container {
     width: 75%;
     margin: auto;
     margin-top: 30vh;
@@ -7,7 +7,7 @@
     line-height: 1.2;
     
 
-    .under-cons-text {
+    .redirect-text {
         padding-bottom: 50px;
         border-bottom: 2px solid #000;
 
@@ -39,8 +39,8 @@
     }
 
     @media screen and (max-width: 800px){
-        .under-cons-text {
-            .under-cons-br {
+        .redirect-text {
+            .redirect-br {
                 display: block;
             }
 
