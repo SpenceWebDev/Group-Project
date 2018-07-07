@@ -4,6 +4,7 @@
     left: 65%;
     transform: translate(-50%, -50%);
 }
+
 .banner{
     position: relative;
     text-align: center;
@@ -43,9 +44,14 @@
 
 /*Banner Media Queries Start*/
 @media only screen and (max-width: 750px){
+
+    main {
+        margin-top: 50px;
+    }
+    
     .centered {
         position: absolute;
-        top: 60%;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
     .banner{
@@ -86,7 +92,6 @@
 
 @media only screen and (max-width: 450px) {
     .centered {
-        padding-top: 25px;
 
         h2 {
             font-size: 10vw;
