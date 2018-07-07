@@ -31,6 +31,7 @@
     }
 
     @media screen and (max-width: 1000px){
+        padding: 100px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 678px);
         text-align: center;
@@ -40,8 +41,12 @@
         }
     }
 
+    @media screen and (max-width: 750px){
+        padding: 100px 20px;
+        grid-template-rows: repeat(6, 678px);
+    }
+
     @media screen and (max-width: 550px){
-        padding: 100px 25px;
         grid-template-rows: repeat(6, 400px);
     }
 }
