@@ -1,5 +1,4 @@
 .about-banner {
-    margin-top: 50px;
     width: 100%;
     position: relative;
 
@@ -31,6 +30,10 @@
     }
 
     @media screen and (max-width: 750px) {
+
+        .about-banner{
+            margin-top: 50px;
+        }
         
         h2 {
             line-height: 225%;
