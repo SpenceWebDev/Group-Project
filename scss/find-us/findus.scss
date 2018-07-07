@@ -3,19 +3,32 @@
 
     main{
         display: flex;
+        margin: 100px;
+
+        h2 {
+            font-size: 3vw;
+        }
     }
 
     #googlemap-image{
-        width: 825px;
-        height: 100%;
-        margin-left: 5px;
+        object-fit: cover;
         border: 1px solid gainsboro;
     }
 
+    .find-img-txt {
+        width: 50%;
+        margin-left: 70px;
+    }
+
     .form{
-        margin-left: 60px;
+        
         width: 520px;
         padding: 35px;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 50px;
+        }
     }
 
     #FirstName, #LastName, #email{
@@ -47,18 +60,20 @@
         background-color: black;
         border: none;
         color: white;
-        margin-left: 170px;
+        // margin-left: 170px;
         width: 100px;
     }
 
     #comments{
         font-family: $main-font;
         border: 2px solid gray;
+        height: 150px;
+        width: 400px;
     }
 
     .nearest-location {
-        margin-left: 100px;
-        width: 100%;
+        margin-left: 50px;
+        width: 20%;
         height: auto;
         text-align: center;
       }
@@ -143,386 +158,489 @@
 
 
       /* Window Scaling media queries */
-    @media only screen and (max-width: 1800px){
-        #googlemap-image{
-            margin-left: 15px;
-        }
+    // @media only screen and (max-width: 1800px){
+    //     #googlemap-image{
+    //         margin-left: 15px;
+    //     }
 
-        .nearest-location{
-            margin-left: 130px;
-        }
-    }
+    //     .nearest-location{
+    //         margin-left: 50px;
+    //     }
+    // }
 
-    @media only screen and (max-width: 1680px){
-        #googlemap-image{
-            width: 700px;
-            margin-left: 25px;
-        }
+    // @media only screen and (max-width: 1680px){
+    //     #googlemap-image{
+    //         width: 700px;
+    //         margin-left: 25px;
+    //     }
 
-        .nearest-location{
-            margin-left: 68px;
-        }
-    }
+    //     .nearest-location{
+    //         margin-left: 68px;
+    //     }
+    // }
 
-    @media only screen and (max-width: 1625px){
-        #googlemap-image{
-            width: 650px;
-            margin-left: 20px;
+    // @media only screen and (max-width: 1625px){
+    //     #googlemap-image{
+    //         width: 650px;
+    //         margin-left: 20px;
+    //         margin-top: 25px;
+    //     }
+
+    //     .nearest-location{
+    //         margin-left: 60px;
+    //     }
+    // }
+
+    @media only screen and (max-width: 1650px){
+
+        main{
+            display: block;
             margin-top: 25px;
         }
 
-        .nearest-location{
-            margin-left: 60px;
-        }
-    }
+        .find-img-txt {
+            width: 100%;
+            text-align: center;
+            margin: unset;
+            margin-top: 100px;
 
-    @media only screen and (max-width: 1555px){
-
-        main{
-            display: block;
-        }
-
-        #googlemap-image{
-            display: block;
-            width: 950px;
-            height: 100%;
-            margin-left: 215px;
+            h2 {
+                margin-bottom: 20px;
+            }
         }
 
         .nearest-location{
-           display: block;
-           margin-left: 40%;
-           margin-top: -150px;
-           width: 350px;
-           height: auto;
+        //    display: block;
+        //    margin-left: 40%;
+        //    margin-top: -150px;
+        //    width: 350px;
+        //    height: auto;
+        margin: auto;
+        width: 100%;
         }
 
-        .form{
-            margin-left: 27%;
+        .nearest-location-text {
+            margin-top: 50px;
+            margin-bottom: 100px;
         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 400px;
-            text-align: left;
-            margin-right: 6px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
+
+        .form {
+            width: 100%;
+            margin: auto;
         }
 
-        #comments{
-            width: 600px;
-            border: 2px solid gray;
+        @media screen and (max-width: 1500px) {
+           
+            main {
+                h2 {
+                    font-size: 5vw;
+                }
+            }
+            
         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 225px;
-            margin-top: 10px;
-            width: 150px;
+        @media screen and (max-width: 750px){
+            main {
+                margin-top: 100px;
+            }
+        } 
+
+        @media screen and (max-width: 670px) {
+           
+            main {
+                margin: 0;
+                margin-top: 100px;
+                
+
+                h2 {
+                    font-size: 10vw;
+                }
+
+                .form {
+                    padding: 40px;
+                }
+
+                #comments {
+                    width: 100%;
+                }
+
+                .find-img-txt {
+                    padding: 20px;
+                }
+
+                .nearest-location-text {
+                    font-size: 4.3vw;
+                }
+            }
+
+            #FirstName, #LastName, #email {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            #email {
+                margin-bottom: 50px;
+            }
+            
         }
+
+        @media screen and (max-width: 425px){
+            main {
+
+                h2 {
+                    font-size: 14vw;
+                }
+
+                .form {
+                    padding: 15px;
+
+                    h2 {
+                        margin-bottom: 5px;
+                    }
+
+                    .maxl {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .nearest-location-text {
+                    font-size: 5vw;
+                }
+
+
+
+            }
+            
+
+        }
+
+        // .form{
+        //     margin-left: 27%;
+        // }
+
+        // #FirstName, #LastName, #email{
+        //     display: inline-block;
+        //     width: 400px;
+        //     text-align: left;
+        //     margin-right: 6px;
+        //     margin-bottom: 15px;
+        //     font-size: 1.3em;
+        // }
+
+        // #comments{
+        //     width: 600px;
+        //     border: 2px solid gray;
+        // }
+
+        // #send{
+        //     background-color: black;
+        //     border: none;
+        //     color: white;
+        //     // margin-left: 225px;
+        //     margin-top: 10px;
+        //     width: 150px;
+        // }
 
     }
 
-    @media only screen and (max-width: 1180px){
-        main{
-            display: block;
-        }
+//     @media only screen and (max-width: 1180px){
+//         main{
+//             display: block;
+//         }
         
-        #googlemap-image{
-            display: block;
-            width: 950px;
-            height: 100%;
-            margin-left: 115px;
-        }
+//         #googlemap-image{
+//             display: block;
+//             width: 950px;
+//             height: 100%;
+//             margin-left: 115px;
+//         }
 
-        .nearest-location{
-           display: block;
-           margin-left: 38%;
-           margin-top: -175px;
-           width: 350px;
-           height: auto;
-        }
+//         .nearest-location{
+//            display: block;
+//            margin-left: 38%;
+//            margin-top: -175px;
+//            width: 350px;
+//            height: auto;
+//         }
 
-        .form{
-            margin-left: 23%;
-        }
+//         .form{
+//             margin-left: 23%;
+//         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 400px;
-            text-align: left;
-            margin-right: 6px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+//         #FirstName, #LastName, #email{
+//             display: inline-block;
+//             width: 400px;
+//             text-align: left;
+//             margin-right: 6px;
+//             margin-bottom: 15px;
+//             font-size: 1.3em;
+//         }
 
-        #comments{
-            width: 600px;
-            border: 2px solid gray;
-        }
+//         #comments{
+//             width: 600px;
+//             border: 2px solid gray;
+//         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 225px;
-            margin-top: 10px;
-            width: 150px;
-        }
-    }
+//         #send{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             margin-left: 225px;
+//             margin-top: 10px;
+//             width: 150px;
+//         }
+//     }
 
-    @media only screen and (max-width: 1072px){
-        main{
-            display: block;
-        }
+//     @media only screen and (max-width: 1072px){
+//         main{
+//             display: block;
+//         }
         
-        #googlemap-image{
-            display: block;
-            width: 950px;
-            height: 100%;
-            margin-left: 60px;
-        }
+//         #googlemap-image{
+//             display: block;
+//             width: 950px;
+//             height: 100%;
+//             margin-left: 60px;
+//         }
 
-        .nearest-location{
-           display: block;
-           margin-left: 38%;
-           margin-top: -175px;
-           width: 350px;
-           height: auto;
-        }
+//         .nearest-location{
+//            display: block;
+//            margin-left: 38%;
+//            margin-top: -175px;
+//            width: 350px;
+//            height: auto;
+//         }
 
-        .form{
-            margin-left: 20%;
-        }
+//         .form{
+//             margin-left: 20%;
+//         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 400px;
-            text-align: left;
-            margin-right: 6px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+//         #FirstName, #LastName, #email{
+//             display: inline-block;
+//             width: 400px;
+//             text-align: left;
+//             margin-right: 6px;
+//             margin-bottom: 15px;
+//             font-size: 1.3em;
+//         }
 
-        #comments{
-            width: 600px;
-            border: 2px solid gray;
-        }
+//         #comments{
+//             width: 600px;
+//             border: 2px solid gray;
+//         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 225px;
-            margin-top: 10px;
-            width: 150px;
-        }
-    }
+//         #send{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             margin-left: 225px;
+//             margin-top: 10px;
+//             width: 150px;
+//         }
+//     }
 
-    /* Tablet & Mobile Device Media Queries */
+//     /* Tablet & Mobile Device Media Queries */
 
-    /*iPad Pro*/
-    @media only screen and (max-width: 1024px){
+//     /*iPad Pro*/
+//     @media only screen and (max-width: 1024px){
 
-        main{
-            display: block;
-        }
+//         main{
+//             display: block;
+//         }
 
-        #FirstName, #LastName, #email{
-            font-size: 2.2em;
-        }
+//         #FirstName, #LastName, #email{
+//             font-size: 2.2em;
+//         }
 
-        .form{
-            display: block;
-            margin-left: 17%;
-        }
+//         .form{
+//             display: block;
+//             margin-left: 17%;
+//         }
 
-        #googlemap-image{
-            margin-top: 25px;
-            width: 850px;
-            margin-left: 85px;
-        }
+//         #googlemap-image{
+//             margin-top: 25px;
+//             width: 850px;
+//             margin-left: 85px;
+//         }
 
-        .nearest-location{
-            margin-left: 36%;
-        }
-    }
+//         .nearest-location{
+//             margin-left: 36%;
+//         }
+//     }
     
-    /*iPad*/
-    @media only screen and (max-width: 768px){
+//     /*iPad*/
+//     @media only screen and (max-width: 768px){
 
-        #googlemap-image{
-            margin-left: 23px;
-            width: 730px;
-            margin-top: 5px;
-        }
+//         #googlemap-image{
+//             margin-left: 23px;
+//             width: 730px;
+//             margin-top: 5px;
+//         }
 
-        .nearest-location{
-            margin-left: 30%;
-        }
+//         .nearest-location{
+//             margin-left: 30%;
+//         }
 
-        .form{
-            margin-left: 70px;
-        }
-    }
+//         .form{
+//             margin-left: 70px;
+//         }
+//     }
 
     
-    @media only screen and (max-width: 415px){
+//     @media only screen and (max-width: 415px){
 
-        main{
-            display: block;
-        }
+//         main{
+//             display: block;
+//         }
         
-        #googlemap-image{
-            display: block;
-            width: 400px;
-            height: 100%;
-            margin-left: 6px;
-        }
+//         #googlemap-image{
+//             display: block;
+//             width: 400px;
+//             height: 100%;
+//             margin-left: 6px;
+//         }
 
-        .nearest-location{
-           display: block;
-           margin-left: 8%;
-           margin-top: -190px;
-           width: 350px;
-           height: auto;
-        }
+//         .nearest-location{
+//            display: block;
+//            margin-left: 8%;
+//            margin-top: -190px;
+//            width: 350px;
+//            height: auto;
+//         }
 
-        .form{
-            margin-left: 5px;
-            width: 410px;
-        }
+//         .form{
+//             margin-left: 5px;
+//             width: 410px;
+//         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 270px;
-            text-align: left;
-            margin-right: 6px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+//         #FirstName, #LastName, #email{
+//             display: inline-block;
+//             width: 270px;
+//             text-align: left;
+//             margin-right: 6px;
+//             margin-bottom: 15px;
+//             font-size: 1.3em;
+//         }
 
-        #comments{
-            width: 350px;
-            border: 2px solid gray;
-        }
+//         #comments{
+//             width: 350px;
+//             border: 2px solid gray;
+//         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 100px;
-            margin-top: 10px;
-            width: 150px;
-        }
-    }
+//         #send{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             margin-left: 100px;
+//             margin-top: 10px;
+//             width: 150px;
+//         }
+//     }
 
-    @media only screen and (max-width: 375px){
-        main{
-            display: block;
-        }
+//     @media only screen and (max-width: 375px){
+//         main{
+//             display: block;
+//         }
         
-        #googlemap-image{
-            display: block;
-            width: 350px;
-            height: 100%;
-            margin-left: 13px;
-        }
+//         #googlemap-image{
+//             display: block;
+//             width: 350px;
+//             height: 100%;
+//             margin-left: 13px;
+//         }
 
-        .nearest-location{
-           display: block;
-           margin-left: 2%;
-           margin-top: -190px;
-           width: 350px;
-           height: auto;
-        }
+//         .nearest-location{
+//            display: block;
+//            margin-left: 2%;
+//            margin-top: -190px;
+//            width: 350px;
+//            height: auto;
+//         }
 
-        .form{
-            margin-left: 5px;
-            width: 350px;
-        }
+//         .form{
+//             margin-left: 5px;
+//             width: 350px;
+//         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 270px;
-            text-align: left;
-            margin-right: 6px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+//         #FirstName, #LastName, #email{
+//             display: inline-block;
+//             width: 270px;
+//             text-align: left;
+//             margin-right: 6px;
+//             margin-bottom: 15px;
+//             font-size: 1.3em;
+//         }
 
-        #comments{
-            width: 300px;
-            border: 2px solid gray;
-        }
+//         #comments{
+//             width: 300px;
+//             border: 2px solid gray;
+//         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 80px;
-            margin-top: 10px;
-            width: 150px;
-        }
-    }
+//         #send{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             margin-left: 80px;
+//             margin-top: 10px;
+//             width: 150px;
+//         }
+//     }
 
-    @media only screen and (max-width: 320px){
-        main{
-            display: block;
-        }
+//     @media only screen and (max-width: 320px){
+//         main{
+//             display: block;
+//         }
         
-        #googlemap-image{
-            display: block;
-            width: 300px;
-            height: 100%;
-            margin-left: 10px;
-        }
+//         #googlemap-image{
+//             display: block;
+//             width: 300px;
+//             height: 100%;
+//             margin-left: 10px;
+//         }
 
-        .nearest-location{
-           display: block;
-           margin-left: 2%;
-           margin-top: -190px;
-           width: 310px;
-           height: auto;
-        }
+//         .nearest-location{
+//            display: block;
+//            margin-left: 2%;
+//            margin-top: -190px;
+//            width: 310px;
+//            height: auto;
+//         }
 
-        .nearest-location-text{
-            font-size: 20px;
-        }
+//         .nearest-location-text{
+//             font-size: 20px;
+//         }
 
-        .form{
-            margin-left: 5px;
-            width: 315px;
-        }
+//         .form{
+//             margin-left: 5px;
+//             width: 315px;
+//         }
 
-        #FirstName, #LastName, #email{
-            display: inline-block;
-            width: 220px;
-            text-align: left;
-            margin-bottom: 15px;
-            margin-left: 13px;
-            font-size: 1.3em;
-        }
+//         #FirstName, #LastName, #email{
+//             display: inline-block;
+//             width: 220px;
+//             text-align: left;
+//             margin-bottom: 15px;
+//             margin-left: 13px;
+//             font-size: 1.3em;
+//         }
 
-        #comments{
-            width: 280px;
-            border: 2px solid gray;
-            margin-left: -20px;
-            margin-top: -25px;
-        }
+//         #comments{
+//             width: 280px;
+//             border: 2px solid gray;
+//             margin-left: -20px;
+//             margin-top: -25px;
+//         }
 
-        #send{
-            background-color: black;
-            border: none;
-            color: white;
-            margin-left: 45px;
-            margin-top: 10px;
-            width: 150px;
-        }
-    }
+//         #send{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             margin-left: 45px;
+//             margin-top: 10px;
+//             width: 150px;
+//         }
+//     }
         
         
 
@@ -548,8 +666,8 @@
 
 
 
-    @media only screen and (max-width: 750px){
-    .content{
-        margin-top: 80px;
-    }
-}
+//     @media only screen and (max-width: 750px){
+//     .content{
+//         margin-top: 80px;
+//     }
+// }
