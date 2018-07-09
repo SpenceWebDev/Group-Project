@@ -1,0 +1,12 @@
+.fade-in {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1000px){
+    .fade-in-show {
+        .fade-in {
+            opacity: 1;
+        }
+    } 
+}
+
