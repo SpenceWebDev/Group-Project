@@ -19,7 +19,6 @@ function navToggle() {
 	if (nav.style.height <= "275px") {
 	nav.style.height = "50px";
 	main.style.marginTop = "50px";
-	$('body').css('overflow',"unset");
 	
     	var i = 0;
     	for (i = 0; i < menu.length; i++){
@@ -31,9 +30,9 @@ function navToggle() {
 	} 
 	//to open
 	else if (nav.style.height <= "60px") {
-	nav.style.height = "112%";
+	nav.style.height = "100vh";
 	main.style.marginTop = "275px";
-	$('body').css('overflow',"hidden");
+	$('body').css('position',"fixed");
     	var i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="1.0";
