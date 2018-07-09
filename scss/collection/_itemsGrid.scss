@@ -24,6 +24,17 @@
         display: inline;
     }
 
+    #item-01,
+    #item-02,
+    #item-03,
+    #item-04,
+    #item-05,
+    #item-06, {
+        margin-top: -100px; 
+        padding-top: 100px; 
+        display: inline-block;
+    }
+
     @media screen and (max-width: 1500px){
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 678px);
