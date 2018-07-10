@@ -34,6 +34,7 @@ function navToggle() {
 	nav.style.height = "100vh";
 	main.style.marginTop = "275px";
 	$('body').css('position',"fixed");
+	$('body').css('width',"100%");
     	var i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="1.0";
