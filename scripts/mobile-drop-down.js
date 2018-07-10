@@ -24,6 +24,7 @@ function navToggle() {
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="0.0";
 	menu[i].style.marginTop="100px";
+	$('body').css('position',"unset");
 	};
     	document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
 	
